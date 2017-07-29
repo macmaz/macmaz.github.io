@@ -53,6 +53,7 @@ h2 {
 
 section {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 article {
@@ -62,14 +63,25 @@ article {
 footer {
     padding: 30px 50px;
     background-color: black;
-    color: white;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: 15px;
+    position: relative;
 }
 
-footer a:link {
+#contact{
+     color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+#contact a:link {
     color: white;
     text-decoration: none;
+}
+
+#image img{
+    width:15%;
+    position: absolute;
+    left:0;
+    right:60%;
+    margin: 0 auto;
+    bottom: 10%;
 }
