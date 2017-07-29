@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <form action="mailto:maciej.mazurek87@gmail.com" method="post" enctype="text/plain" autocomplete="on">
+
+        <p>A Simple Form</p>
+        <p>Form Fundamentals</p>
+
+        <fieldset id=customer-info>
+            <legend>Customer Info</legend>
+
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder=" Enter your name" size="40" autofocus><br/>
+            <br/>
+
+            <label for="phone">Telephone:</label>
+            <input type="tel" maxlength="14" placeholder=" Pattern: 1-234-567-8910" name="telephone" id="phone" pattern="([0-9]{1}(-[0-9]{3})(-[0-9]{3})(-[0-9]{4}))" size="40" required><br/>
+            <br/>
+            <label for="email">Email adress:</label>
+            <input type="email" name="e-mail" id="email" placeholder=" Enter your email address" size="40" multiple required><br/>
+            <br/>
+
+        </fieldset>
+        <br>
+
+        <fieldset id="books">
+            <legend>Books</legend>
+            <br>
+            <select>
+        <option value="harry-potter-one">1. Harry Potter and the Philosopher's Stone</option>
+        <option value="harry-potter-two">2.Harry Potter and the Chamber of Secrets</option>
+        <option value="harry-potter-three">3.Harry Potter and the Prisoner of Azkaban</option>
+        <option value="harry-potter-four">4.Harry Potter and the Goblet of Fire</option>
+        <option value="harry-potter-five">5.Harry Potter and the Order of the Phoenix</option>
+        </select>
+            <label for="quantity">Quantity (Maxsimum 5)</label>
+            <input type="number" name="quantity" min="1" max="5" id="quantity">
+
+            <br>
+
+        </fieldset>
+        
+          <br><input type="submit" value="Submit">
+
+    </form>
+
+  
+
+
+
+
+
+
+
+
+</body>
+
+</html>
