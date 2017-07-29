@@ -5,16 +5,21 @@
 
 body { ;
     color:whitesmoke;
+    background-color: #213b50;
+    
 }
 
-.bg-color {
-    background-color: #213b50;
-    color:white;
+
+input, select, textarea {
+    background-color: #2b4a64;
+    color:#ffffff;
+    border: #2b4a64 1px solid;
 }
 
-input {
-    background-color: #213b50;
-color:white;
+input:focus, select:focus, textarea:focus{
+background-color: #4e708c;    
+border: 1px solid #ffffff;
+color: #ffffff;    
 }
 
 ::-webkit-input-placeholder { /* Chrome */
@@ -25,9 +30,19 @@ color:white;
 }
 ::-moz-placeholder { /* Firefox 19+ */
   color: white;
-  opacity: 1;
 }
 :-moz-placeholder { /* Firefox 4 - 18 */
   color: white;
-  opacity: 1;
 }
+
+input[type="submit"]{
+    background-color: yellowgreen;
+    border:none ;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+
