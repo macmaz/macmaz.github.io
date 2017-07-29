@@ -9,6 +9,10 @@ body { ;
     
 }
 
+form {
+    margin: 10px 0 0 10px ;
+}
+
 
 input, select, textarea {
     background-color: #2b4a64;
@@ -19,7 +23,8 @@ input, select, textarea {
 input:focus, select:focus, textarea:focus{
 background-color: #4e708c;    
 border: 1px solid #ffffff;
-color: #ffffff;    
+color: #ffffff;   
+outline: none;
 }
 
 ::-webkit-input-placeholder { /* Chrome */
@@ -44,5 +49,6 @@ input[type="submit"]{
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
+    cursor: pointer;  /*po najechaniu jest łapka*/
 }
 
