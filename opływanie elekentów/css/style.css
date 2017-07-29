@@ -1,0 +1,17 @@
+/*opływanie elementu*/
+
+#minions {
+    float: left;
+}
+
+#minions2 {
+    float: right;
+}
+
+
+/*własciwość clear*/
+
+p:last-child {
+    color: navy;
+    clear: both; /*wpływa na obydwa float*/
+}
