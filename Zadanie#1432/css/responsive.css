@@ -18,3 +18,32 @@
         font-size: 33px;
     }
 }
+
+/*medium screen text and image*/
+
+@media screen and (min-width:992px) and (max-width:1170px) {
+    .header {
+        height: 70vh;
+        background: url(/img/man-2.jpg) no-repeat center center;
+        background-size: cover;
+        position: absolute;
+    }
+    
+    section {
+        position: relative;
+        top: 5%;
+        left:600px;
+        text-align: left;
+        font-weight: 800;
+    }
+    
+    #one {
+        font-size:20px;
+            margin-bottom:15px;
+    }
+    
+    #two {
+        font-size: 25px;
+    }
+}
+
