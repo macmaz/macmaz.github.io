@@ -1,0 +1,20 @@
+/*large screen text*/
+
+@media screen and (min-widthL: 1170px){
+    section{
+        position:relative;
+        top:40%;
+        text-align: left;
+        margin: 3% 3%;
+        font-weight: 800;
+    }
+    
+    #one {
+        font-size:25px;
+        margin-bottom: 15px;
+    }
+    
+    #two {
+        font-size: 33px;
+    }
+}
