@@ -40,13 +40,15 @@
         <fieldset id="books">
             <legend>Books</legend>
             <br>
-            <select>
-        <option value="harry-potter-one">1. Harry Potter and the Philosopher's Stone</option>
-        <option value="harry-potter-two">2.Harry Potter and the Chamber of Secrets</option>
-        <option value="harry-potter-three">3.Harry Potter and the Prisoner of Azkaban</option>
-        <option value="harry-potter-four">4.Harry Potter and the Goblet of Fire</option>
-        <option value="harry-potter-five">5.Harry Potter and the Order of the Phoenix</option>
-        </select>
+            <input list="potter" name="potter">
+            <datalist id="potter">
+        <option value="Harry Potter and the Philosopher's Stone">
+        <option value="Harry Potter and the Chamber of Secrets">
+        <option value="Harry Potter and the Prisoner of Azkaban">
+        <option value="Harry Potter and the Goblet of Fire">
+        <option value="Harry Potter and the Order of the Phoenix">
+        </datalist>
+           
             <label for="quantity">Quantity (Maxsimum 5)</label>
             <input type="number" name="quantity" min="1" max="5" id="quantity">
 
