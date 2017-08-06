@@ -77,6 +77,11 @@
 
 @media all and (max-width: 768px) {
     
+    header#main-header div.main-header-content
+    {
+        padding:15vh;
+    }
+    
     header#main-header div.main-header-content h1 {
         
         font-size: 2.5em;
