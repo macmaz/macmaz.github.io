@@ -1,14 +1,2 @@
-#outside {
-    background-color: darkseagreen;
-    height: 200px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#inside {
-    background-color: darkgreen;
-    height: 100px;
-    width: 100px;
-}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: darkmagenta;
