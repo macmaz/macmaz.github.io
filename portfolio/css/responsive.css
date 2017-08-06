@@ -51,6 +51,7 @@
     section#about article.about-content {
         width: 100%;
         text-align: center;
+        height: 100%;
     }
     
     .single-portfolio-item{
