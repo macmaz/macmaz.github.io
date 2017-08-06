@@ -1,8 +1,33 @@
-#outside {
-    background-color: darkseagreen;
-    height: 200px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+.bank_btn {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    border-radius: 100%;
+    left:5%;
+    font-size: 300%;
+    background-color: skyblue;
+    color:white;
+    margin:1%;
+    border: 1px solid black;
+    transition: all 0.3s ease 0s;
+}
+
+i {
+    margin-left: 4px;
+    margin-bottom: 6px;
+}
+
+.bank_btn:hover {
+    color: skyblue;
+    background-color: white;
+}
+
+
