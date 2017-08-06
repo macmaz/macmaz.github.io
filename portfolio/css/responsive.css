@@ -110,8 +110,8 @@
         padding:0;
     }
     
-       article.about-content p {
-        font-size: 1.2em;
+      section#about article.about-content {
+        font-size: 1em;
     }
     
 }
@@ -123,8 +123,8 @@
         font-size: 1.2em;
     }
     
-    article.about-content p {
-        font-size: 10em;
+    section#about article.about-content {
+        font-size: 1em;
     }
 }
 
