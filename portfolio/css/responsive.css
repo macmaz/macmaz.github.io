@@ -110,17 +110,21 @@
         padding:0;
     }
     
+       article.about-content p {
+        font-size: 1.2em;
+    }
+    
 }
 
 @media all and (max-width: 480px){
     header#main-header div.main-header-content
     {
         padding:10vh;
-        font-size: 20px;
+        font-size: 1.2em;
     }
     
     article.about-content p {
-        font-size: 20px;
+        font-size: 1.2em;
     }
 }
 
