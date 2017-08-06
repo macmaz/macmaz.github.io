@@ -115,7 +115,8 @@
 @media all and (max-width: 480px){
     header#main-header div.main-header-content
     {
-        padding:15vh;
+        padding:10vh;
+        font-size: 10px;
     }
 }
 
