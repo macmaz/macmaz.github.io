@@ -1,0 +1,8 @@
+#outside {
+    background-color: darkseagreen;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
