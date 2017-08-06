@@ -116,7 +116,11 @@
     header#main-header div.main-header-content
     {
         padding:10vh;
-        font-size: 10px;
+        font-size: 20px;
+    }
+    
+    article.about-content p {
+        font-size: 20px;
     }
 }
 
