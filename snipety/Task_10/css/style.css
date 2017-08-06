@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+  width: 100%; 
+  height: 100vw;
+}
+
+.child {
+  width: 100%;
+  height: 100vw;
+  background-image: url("http://www.qygjxz.com/data/out/114/4676052-image.png");
+  background-position: center;
+  background-size: cover;
+transition: all .5s;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+  transform: scale(2);
+}
