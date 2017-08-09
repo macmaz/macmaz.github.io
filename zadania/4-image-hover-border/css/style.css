@@ -29,12 +29,22 @@ a {
     text-align: center;
     color: #000;
     cursor: default;
+
 }
+
+
 
 img {
     margin: 5px;
 }
 
+/*commit this to have transition top and bottom border*/
+
+figurecaption:hover, span:hover {
+       
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+}
 
 a::before,
 a::after,
@@ -43,36 +53,36 @@ span::after {
     opacity: 0;
     content: '';
     position: absolute;
-    width: 0px;
+    width: 0px; 
     height:0px;
     transition: 2.5s;
 }
 
 a::before {
-    top: -5px;
-    left: -5px;
-    border-top: 4px solid #000;
+    top: 0px;
+    left: -4px;
+/*    border-top: 4px solid #000;*/ /*uncommit this to get transition top border*/
     border-left: 4px solid #000;
 }
 
 a::after {
-    top: -5px;
-    right: -5px;
-    border-top: 4px solid #000;
+    top: 0px;
+    right: -4px;
+/*    border-top: 4px solid #000;*/ /*uncommit this to get transition top border*/
     border-right: 4px solid #000;
 }
 
 span::before {
     bottom: 0px;
-    left: -5px;
-    border-bottom: 4px solid #000;
+    left: -4px;
+/*    border-bottom: 4px solid #000;*/ /*uncommit this to get transition bottom border*/
     border-left: 4px solid #000;
 }
 
 span::after {
     bottom: 0px;
-    right: -5px;
-    border-bottom: 4px solid #000;
+    right: -4px;
+/*    border-bottom: 4px solid #000; */ /*uncommit this to get transition bottom border*/
     border-right: 4px solid #000;
 }
 
@@ -82,7 +92,7 @@ a:hover span::before,
 a:hover span::after {
     opacity: 1;
     width: calc( 360px);
-    height: calc( 207px);
+    height: calc( 214px);
 }
 
 figure:hover figurecaption {
