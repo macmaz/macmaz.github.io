@@ -31,6 +31,10 @@ a {
     cursor: default;
 }
 
+img {
+    margin: 5px;
+}
+
 
 a::before,
 a::after,
@@ -47,29 +51,29 @@ span::after {
 a::before {
     top: -5px;
     left: -5px;
-    border-top: 2px solid #000;
-    border-left: 2px solid #000;
+    border-top: 4px solid #000;
+    border-left: 4px solid #000;
 }
 
 a::after {
     top: -5px;
     right: -5px;
-    border-top: 2px solid #000;
-    border-right: 2px solid #000;
+    border-top: 4px solid #000;
+    border-right: 4px solid #000;
 }
 
 span::before {
     bottom: 0px;
     left: -5px;
-    border-bottom: 2px solid #000;
-    border-left: 2px solid #000;
+    border-bottom: 4px solid #000;
+    border-left: 4px solid #000;
 }
 
 span::after {
     bottom: 0px;
     right: -5px;
-    border-bottom: 2px solid #000;
-    border-right: 2px solid #000;
+    border-bottom: 4px solid #000;
+    border-right: 4px solid #000;
 }
 
 a:hover::before,
@@ -78,7 +82,7 @@ a:hover span::before,
 a:hover span::after {
     opacity: 1;
     width: calc( 360px);
-    height: calc( 200px);
+    height: calc( 207px);
 }
 
 figure:hover figurecaption {
