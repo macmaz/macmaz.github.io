@@ -18,7 +18,7 @@ figurecaption {
     background-color: rgba(0,0,0,0.8);
     color: white;
     font-size: 0;
-    transition: font-size 1.5s linear;
+    transition: font-size 1.5s ease-in-out;
 }
 
 
@@ -40,10 +40,11 @@ img {
 
 /*commit this to have transition top and bottom border*/
 
+
 figurecaption:hover, span:hover {
-       
     border-top: 4px solid #000;
     border-bottom: 4px solid #000;
+    transition: 0.5s ease-in-out;
 }
 
 a::before,
@@ -91,7 +92,6 @@ a:hover::after,
 a:hover span::before,
 a:hover span::after {
     opacity: 1;
-    width: calc( 360px);
     height: calc( 214px);
 }
 
