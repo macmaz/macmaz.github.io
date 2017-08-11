@@ -7,18 +7,21 @@
 body {
     background-color: #98fb98;
     text-align: center;
+    
 
 }
 
 div#product-list{
-    position: absolute;
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     width:100%;
-    top:30%;
+    margin-top: 13%;
     
 }
 
 .product{
-    width:270px;
+    width:23%;
     height: 270px;
     display: inline-block;
     margin: 0% 1%;

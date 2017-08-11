@@ -1,21 +1,15 @@
-
-@media all and (max-width: 992px){
-
-   body  {
-       
-       width:50%;
-       
-       
+@media all and (max-width: 992px)
+{
+div.product {
+        width: 47%;}
+    
     }
-    
-}
 
-
-@media all and (max-width: 480px) {
+@media all and (max-width: 480px)
+{
     
-     body  {
-         
-           width:25%;
-       }
-    
-}
+div.product{
+        width: 75%;
+    margin: 1%;}
+  
+    }
