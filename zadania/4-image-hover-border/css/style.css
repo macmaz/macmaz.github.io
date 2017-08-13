@@ -36,12 +36,19 @@ a {
 
 img {
     margin: 5px;
+    vertical-align: middle;
 }
 
 /*commit this to have transition top and bottom border*/
 
+span {
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    transition: 0.5s ease-in-out;
+}
 
-figurecaption:hover, span:hover {
+
+span:hover {
     border-top: 4px solid #000;
     border-bottom: 4px solid #000;
     transition: 0.5s ease-in-out;
