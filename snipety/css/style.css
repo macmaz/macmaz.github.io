@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+h3,h4 {
+    text-align: center;
+    margin: 1%
+}
+
+h4 {
+    color: crimson;
+    text-transform: uppercase;
+}
+
+.curtain {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+    
+}
+    
+.curtain_wrapper {
+  width: 100%;
+  height: 100%;
+
+}
+
+.curtain_panel {
+  width: 50%; 
+  height: 100%; 
+  float: left;
+  position:absolute;
+  z-index: 999; 
+  transition: all 1s linear; 
+}
+
+.curtain-containt {
+  z-index: 1; 
+    margin: 0;
+    padding: 0;
+}
+
+
+div.curtain_left,
+div.curtain_right {
+transform: translateX(100%);
+
+}
+
+
+div.curtain_left {
+  background-color: darkcyan;
+animation: goleft 3s forwards ease-out;
+}
+@keyframes goleft{
+    0% {transform: translateX(0%);}
+    100%{transform: translateX(-100%);}
+}
+
+div.curtain_right {
+  background-color: darkcyan;
+animation: goright 3s forwards ease-out;
+}
+@keyframes goright{
+    0% {transform: translateX(100%);}
+    100%{transform: translateX(200%);}
+}
+
+
+/*Task 1 begining*/
+
+#outside {
+    margin-left: 42%;
+    background-color: darkseagreen;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inside {
+    background-color: darkgreen;
+    height: 100px;
+    width: 100px;
+}
+
+/*Task one ends*/
+
+/*Task 2 begining*/
+
+div.button {
+    margin: 0% 0% 10% 43%;
+}
+
+.bank_btn {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    border-radius: 50%;
+    left:5%;
+    font-size: 300%;
+    background-color: skyblue;
+    color:white;
+    margin:1%;
+    border: 1px solid black;
+    transition: all 0.3s ease 0s;
+}
+
+i {
+    margin-left: 4px;
+    margin-bottom: 6px;
+}
+
+.bank_btn:hover {
+    color: skyblue;
+    background-color: white;
+}
+
+/*Task 2 ends*/
+
+/*Task 3 begining*/
+
+#rainbow {
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+}
+
+/*Task 3 ends*/
+
+/*Task 4 beginings*/
+
+video 
+{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+/*Task 4 ends*/
+
+/*Task 5 beginings*/
+
+.credit-card {
+    margin-left: 40%;
+    list-style-type: none;
+}
+
+/*Task 5 ends*/
+
+/*Task 6 beginings*/
+form {
+    text-align: center;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: darkmagenta;
+}
+
+/*Task 6 ends*/
+
+/*Task 7 beginings*/
+
+div.hyperlinks {
+    margin-left: 40%;
+}
+
+a.doc {
+    color:firebrick;
+    font-weight: 500;
+}
+
+
+/*Task 7 ends*/
+
+/*Task 8 beginings*/
+
+q:lang(en) {
+    quotes: "\002A" "\002A";
+}
+
+q:lang(pl) {
+    quotes: "\0022" "\0022";
+}
+
+blockquote:lang(en)::before {
+    
+  content: "\002A";
+}
+
+blockquote:lang(en)::after {
+    
+  content: "\002A";
+}
+
+blockquote:lang(pl)::before {
+    
+  content: "\0022";
+}
+
+blockquote:lang(pl)::after {
+    
+  content: "\0022";
+}
+
+/*Task 8 ends*/
+
+/*Task 9 beginigs*/
+
+#bottom-left {
+ background-color: darkslategrey;
+    color: bisque;
+    font-size: small;
+    padding-top: 3px;
+    padding-left: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+/*Task 9 ends*/
+
+/*Task 10 beginings*/
+
+.background {
+    margin-left: 35%;
+ height: 200px;
+    width: 400px;
+    background-image: url("http://www.qygjxz.com/data/out/114/4676052-image.png");
+    background-position: center;
+    background-size: 100%;
+    transition: all .5s;
+}
+
+.background:hover{
+  background-size: 200%;
+}
+
+/*Task 10 ends*/
+
+/*Task 11 beginigs*/
+
+p.heart {
+    text-align: center;
+    font-size: 5em;
+
+}
+
+i.fa-heart {
+    color: #ff5577;
+    animation: heart 0.9s linear infinite;
+    -webkit-animation: heart 0.9s linear infinite;
+    max-width: 300px;
+}
+
+-webkit-@keyframes heart {
+    0% {-webkit-transform: scale(1,1); }
+    50% {-webkit-transform: scale(1.3,1.3); }
+    100% {-webkit-transform: scale(1,1); }
+    
+}
+
+
+@keyframes heart {
+    0% {transform: scale(1,1); }
+    50% {transform: scale(1.3,1.3); }
+    100% {transform: scale(1,1); }
+    
+}
+/*Task 11 ends*/
+
+/*Task 13 begins*/
+
+.parallax-background-image { 
+    /* The image used */
+    background-image: url("https://www.fjordnorway.com/imageresizer/?image=%2Fdbimgs%2F6-trolltunga-nina-de-flon.jpg&action=Background_Overlay");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Task 13 ends*/
+
+/*Task 14 begin*/
+
+.container {
+    margin-left: 40%;
+  cursor: pointer;
+  height: 316px;
+  perspective: 600;
+  position: relative;
+  width: 316px;
+}
+.flipper {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+  text-align: center;
+}
+.flipper:hover {
+  transform: rotateY(180deg);
+}
+
+.side img {
+    border: 1px solid black;
+}
+.flipper .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.flipper .back {
+
+  transform: rotateY(180deg);
+}
+
+/*Task 14 ends*/
+
+/*Task 15 begin*/
+
+.section {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.section .box {
+    width: 25%;
+    text-align: center;
+    line-height: 500px;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+        
+}
+
+.section .box:nth-child(1){
+    background-color: aqua;
+}
+
+.section .box:nth-child(2){
+    background-color:crimson;
+}
+
+.section .box:nth-child(3){
+    background-color:dodgerblue;
+}
+
+.section .box:nth-child(4){
+    background-color:forestgreen;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 500px;
+    font-size: 2em;
+    background: rgba(0,0,0,0.8);
+    transition: 0.5s;
+}
+
+h1 span {
+    background: rgba(255,255,255,0);
+    width: 100%;
+    transition: 1s;
+    color:#fff;
+    padding: 25px 20px;
+}
+
+.box:hover h1 span {
+    color: #262626;
+     background: rgba(255,255,255,0.8);
+    letter-spacing: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+
+.box:hover h1 {
+    background: rgba(0,0,0,0);
+}
+
+.box:hover {
+    width: 40%;
+}
+
+/*Task 15 ends*/
+
+/*Task 16 begins*/
+
+div#loader{
+    text-align: center;
+    margin-left: 40%;
+    width:20%;
+}
+
+.loader-frame {
+    width: 100%;
+    height: 30px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+.loader {
+   background-color:  #3498db; /* Blue */
+    width: 50px;
+    height: 30px;
+    animation: move 2.5s linear infinite;
+}
+
+@keyframes move {
+    0% { transform: translate(0%); }
+    100% { transform: translate(440%); }
+}
+
+p.loading-text {
+    margin-top: 4%;
+    font-weight: 600;
+    width: 100%;
+    color:black
+    font-size: 13px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    line-height: 10px;
+    height: 10px;
+    animation: fade 1s ease 0s infinite;
+  }
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  
+  50% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+/*Task 16 ends*/
+
