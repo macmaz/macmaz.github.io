@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+
+div.wrapper {
+    width: 100%;
+}
+
+ol {
+    overflow: hidden;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    margin: 0px 20px 0px 20px;
+}
+
+div.menu-left {
+    text-align: left;
+    float: left;
+    width: 50%;
+    background-color: darkblue;
+    display: inline;
+    padding-bottom: 30px;
+    clip-path: polygon(0% 100%, 100% 60%, 100% 0%, 0% 0%);
+}
+
+
+div.menu-right {
+    text-align: right;
+    background-color: darkblue;
+    float: right;
+    width: 50%;
+    padding-bottom: 30px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, -99% 20%);
+   
+}
+
+h1 {
+    text-align: center;
+    font-size: 6em;
+    color:black;
+    padding-top: 10%
+}
