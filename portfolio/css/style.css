@@ -36,11 +36,17 @@ section h2 {
 #main-nav {
     position: fixed;
     width: 100%;
-    background-color: white;
+    background-color: transparent;
     top: 0;
     right: 0;
     z-index: 9999;
 }
+
+#main-nav.scroll {
+    background-color: rgba(255,255,255,.9);
+}
+
+
 
 #main-nav>ul {
     margin: 10px 0px 10px 150px;
@@ -53,10 +59,14 @@ section h2 {
     margin:0px 20px;
 }
 
-#main-nav>ul>li>a {
-    color: darkgreen;
+ul>li>a {
+    color: white;
     font-weight: 400;
     text-decoration: none;
+}
+
+a.navLink.scroll {
+    color:forestgreen;
 }
 
 #main-nav>ul>li>a:hover {
