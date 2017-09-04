@@ -7,21 +7,21 @@ function startRefresh() {
 
         console.log('reload');
 
-        var side;
+        var fontSign;
 
         // Adding fontAsome      
 
         if ((data.PLN.buy) > buy.innerHTML ) {
-            side = $('p.arrow').html('<i class="fa fa-long-arrow-up" aria-hidden="true"></i>');
+            fontSign = $('p.arrow').html('<i class="fa fa-long-arrow-up" aria-hidden="true"></i>');
 
         } else if ((data.PLN.buy) == buy.innerHTML )
 
         {
-            side = $('p.arrow').html('<i class="fa fa-minus" aria-hidden="true"></i>');
+            fontSign = $('p.arrow').html('<i class="fa fa-minus" aria-hidden="true"></i>');
 
 
         } else {
-            side = $('p.arrow').html('<i class="fa fa-long-arrow-down" aria-hidden="true"></i>');
+            fontSign = $('p.arrow').html('<i class="fa fa-long-arrow-down" aria-hidden="true"></i>');
 
         }
 
@@ -30,7 +30,7 @@ function startRefresh() {
         $('#buy').html(data.PLN.buy);
         $('#sell').html(data.PLN.sell);
         
-        return side;
+        return fontSign;
 
     });
 
