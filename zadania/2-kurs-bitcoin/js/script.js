@@ -10,19 +10,33 @@ function startRefresh() {
 
         var side;
 
-        // Adding fontAsome        
+        // Adding fontAsome Buy       
 
         if ((data.PLN.buy) > buy.innerHTML) {
-            side = $('p.arrow').html('<i class="fa fa-long-arrow-up" aria-hidden="true"></i>');
+            side = $('p.arrowBuy').html('<i class="fa fa-long-arrow-up" aria-hidden="true"></i>');
 
         } else if ((data.PLN.buy) == buy.innerHTML)
 
         {
-            side = $('p.arrow').html('<i class="fa fa-minus" aria-hidden="true"></i>');
+            side = $('p.arrowBuy').html('<i class="fa fa-minus" aria-hidden="true"></i>');
 
 
         } else {
-            side = $('p.arrow').html('<i class="fa fa-long-arrow-down" aria-hidden="true"></i>');
+            side = $('p.arrowBuy').html('<i class="fa fa-long-arrow-down" aria-hidden="true"></i>');
+
+        }
+        
+        if ((data.PLN.sell) > sell.innerHTML) {
+            side = $('p.arrowSell').html('<i class="fa fa-long-arrow-up" aria-hidden="true"></i>');
+
+        } else if ((data.PLN.sell) == sell.innerHTML)
+
+        {
+            side = $('p.arrowSell').html('<i class="fa fa-minus" aria-hidden="true"></i>');
+
+
+        } else {
+            side = $('p.arrowSell').html('<i class="fa fa-long-arrow-down" aria-hidden="true"></i>');
 
         }
 
