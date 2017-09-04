@@ -2,8 +2,7 @@
 
 function startRefresh() {
     $.getJSON('https://blockchain.info/pl/ticker', function (data) {
-
-        var sell = document.getElementById('sell');
+        
         var buy = document.getElementById('buy');
 
         console.log('reload');
