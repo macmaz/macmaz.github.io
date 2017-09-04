@@ -9,7 +9,7 @@ function startRefresh() {
 
         var side;
 
-        // Adding fontAsome Buy       
+        // Adding fontAsome      
 
         if ((data.PLN.buy) > buy.innerHTML ) {
             side = $('p.arrow').html('<i class="fa fa-long-arrow-up" aria-hidden="true"></i>');
