@@ -12,10 +12,10 @@ function startRefresh() {
 
         // Adding fontAsome Buy       
 
-        if ((data.PLN.buy) > buy.innerHTML || (data.PLN.sell) > sell.innerHTML) ) {
+        if ((data.PLN.buy) > buy.innerHTML ) {
             side = $('p.arrow').html('<i class="fa fa-long-arrow-up" aria-hidden="true"></i>');
 
-        } else if ((data.PLN.buy) == buy.innerHTML || (data.PLN.sell) == sell.innerHTML) )
+        } else if ((data.PLN.buy) == buy.innerHTML )
 
         {
             side = $('p.arrow').html('<i class="fa fa-minus" aria-hidden="true"></i>');
