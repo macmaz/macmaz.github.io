@@ -9,6 +9,10 @@ body {
     font-family: 'Lato', sans-serif;
     color: #291f1a;
     font-weight: 300;
+/*
+    overflow-x: hidden;
+    overflow-y: auto;
+*/
 }
 
 h1,
@@ -20,17 +24,13 @@ h6 {
     text-align: center;
 }
 
-nav#main-nav>div.container {
-    margin-right: 80px;
-}
-
 header#main-header div h1 {
     font-size: 80px;
 }
 
 section#about {
     padding: 0 80 100px;
-    width: 100%;
+    max-width: 100%;
 }
 
 section h2 {
@@ -45,6 +45,7 @@ section h2 {
 
 #main-nav {
     background-color: transparent;
+    padding-right: 50px;
 }
 
 #main-nav.scroll {
@@ -129,6 +130,11 @@ div.main-header-content h2 {
 
 .about-content {
     font-size: 20px;
+    padding: 0;
+}
+
+.container {
+    margin: 0;
 }
 
 
@@ -189,12 +195,18 @@ div.main-header-content h2 {
 .single-portfolio-item-mask {
     background-color: rgba(42, 61, 79, 0.8);
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     opacity: 0;
     font-size: initial;
     position: absolute;
     padding: 10px;
     transform: translate(-14px);
+}
+
+
+.container-fluid, .row {
+    margin:0;
+    padding:0;
 }
 
 .single-portfolio-item-mask:hover {
@@ -252,14 +264,9 @@ section#contact {
     width: 100%;
 }
 
-.container-fluid {
-    padding: 0;
-}
-
 div.contact_data {
     float: left;
     text-align: left;
-    overflow: hidden;
     line-height: 25px;
 }
 
@@ -270,7 +277,7 @@ div.contact_data h2 {
 
 div.contact-social-icons a {
     height: 50px;
-    width: 50px;
+   width: 50px;
     text-align: center;
     font-size: 40px;
     margin: 50px 5px;
@@ -311,7 +318,7 @@ textarea {
 }
 
 form input {
-    height: 50px
+    height: 50px;
 }
 
 ::-webkit-input-placeholder {

@@ -16,6 +16,12 @@
     
     nav#main-nav>div.container {
     margin-right: 0;
+    padding-right: 0;
+}
+    
+    #main-nav {
+        padding:10px;
+    }
 }
     
         div.contact-data {
@@ -53,6 +59,10 @@
     nav#main-nav>div.container {
     margin-right:0;
 }
+    
+    #main-nav {
+        padding:10px;
+    }
 }
 
     
