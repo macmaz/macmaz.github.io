@@ -1,27 +1,36 @@
 //Function reloading data
 
+$.getJSON('https://blockchain.info/pl/ticker', function (data) {
+ 
+    $('#buy').html(data.PLN.buy);
+        $('#sell').html(data.PLN.sell);
+});
+
+
+
 function startRefresh() {
     $.getJSON('https://blockchain.info/pl/ticker', function (data) {
-        
+
+        var sell = document.getElementById('sell');
         var buy = document.getElementById('buy');
 
         console.log('reload');
 
-        var fontSign;
+        var side;
 
-        // Adding fontAsome      
+        // Adding fontAsome        
 
-        if ((data.PLN.buy) > buy.innerHTML ) {
-            fontSign = $('p.arrow').html('<i class="fa fa-long-arrow-up" aria-hidden="true"></i>');
+        if ((data.PLN.buy) > buy.innerHTML) {
+            side = $('p.arrow').html('<i class="fa fa-long-arrow-up" aria-hidden="true"></i>');
 
-        } else if ((data.PLN.buy) == buy.innerHTML )
+        } else if ((data.PLN.buy) == buy.innerHTML)
 
         {
-            fontSign = $('p.arrow').html('<i class="fa fa-minus" aria-hidden="true"></i>');
+            side = $('p.arrow').html('<i class="fa fa-minus" aria-hidden="true"></i>');
 
 
         } else {
-            fontSign = $('p.arrow').html('<i class="fa fa-long-arrow-down" aria-hidden="true"></i>');
+            side = $('p.arrow').html('<i class="fa fa-long-arrow-down" aria-hidden="true"></i>');
 
         }
 
@@ -30,7 +39,7 @@ function startRefresh() {
         $('#buy').html(data.PLN.buy);
         $('#sell').html(data.PLN.sell);
         
-        return fontSign;
+        return side;
 
     });
 
